@@ -46,7 +46,7 @@ class SvgGenerator extends BaseGenerator implements GeneratorInterface
         // prepare image
         $w = $this->getPixelRatio() * 5;
         $h = $this->getPixelRatio() * 5;
-        $svg = '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="'.$w.'" height="'.$h.'">';
+        $svg = '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 '.$w.' '.$h.' "width="100%" height="100%" shape-rendering="crispEdges" class="identicon">';
 
         $backgroundColor = '#FFFFFF';
         $rgbBackgroundColor = $this->getBackgroundColor();
